@@ -45,14 +45,31 @@ header{
 }
 
 #chicken{
-background-color: #3C153B;
+  background-color: #F01540;
 }
 #drink{
-background-color: #DB4C40;
+  background-color: #DB4C00;
 }
 #vegetables{
-background-color: #8B1E3F;
+  background-color: #8B1E00;
 }
+#chicken .column-title{
+  background-color: #3C153B;
+}
+#drink .column-title{
+  background-color: #DB4C40;
+}
+#vegetables .column-title{
+  background-color: #8B1E3F;
+}
+
+
+
+
+
+
+
+
 /* Simple Responsive Framework. */
 .row {
   width: 90%;
