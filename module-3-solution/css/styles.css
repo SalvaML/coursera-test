@@ -10,20 +10,95 @@ body {
 	background-color: #1f1300;
 	border-radius: 0;
 	border: 0;
+  padding-bottom: 20px;
 }
-#header-nav button{
+.navbar-brand h1 { /* Food, LLC */
+  font-family: 'Verdana', serif;
+  color: #DFD6A7;
+  font-size: 38.25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  float: left;
+}
+.navbar-brand h1:hover, .navbar-brand h1:focus {
+  text-decoration: underline;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -55px;
   border-color: #f7ce5b;
 }
-
-
+ #nav-list{
+  background-color: #DFD6A7;
+  margin-top: 0;
+  margin-bottom: 0;
+ }
+ #nav-list a{
+  border:5px solid #1f1300;
+  color: #1f1300;
+ }
 /* END HEADER */
 /* HOME PAGE */
+#page-title{
+  font-family: 'Sriracha', cursive; 
+  color: #1f1300;
+  font-variant: small-caps;
+  text-shadow: 1px 1px 3px #222;
 
+}
+
+.tile{
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #1f1300;
+  padding: 5px;
+  background-color: #AF9B46;
+  color: #1f1300;
+}
+.tile:hover, .tile:focus {
+  background-color: #1f1300;
+  color: #AF9B46;
+}
+.tile-title{
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 1px #222;
+}
+.content-tile {
+  font-size: .8em;
+  margin-bottom: 5px;
+}
+.back-top{
+  color: #F7B05B;
+  text-shadow: 1px 2px 5px #222;
+}
+.back-top:hover, .back-top:focus{
+  text-decoration: none;
+  color: #DFD6A7;
+}
 /* END HOME PAGE */
-/* FOOTER */
-/* END FOOTER */
+.panel-footer{
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #1f1300;
+  border-top: 0;
+}
 
-
+footer a.back-top{
+  color: white;
+}
+footer hr{
+  border-color: #f7ce5b;
+  width: 80%;
+}
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
@@ -44,21 +119,13 @@ body {
 @media (max-width: 767px) {
   /* Header */
   .navbar-brand {
-    padding-top: 10px;
+    padding-top: 20px;
     height: 80px;
   }
-  .navbar-brand h1 { /* Restaurant name */
+  .navbar-brand h1 { /* FOOD,LLC */
     padding-top: 10px;
     font-size: 5vw; /* 1vw = 1% of viewport width */
   }
-  .navbar-brand p { /* Kosher cert */
-    font-size: .6em;
-    margin-top: 12px;
-  }
-  .navbar-brand p img { /* Star-K */
-    height: 20px;
-  }
-
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
   }
@@ -66,9 +133,14 @@ body {
     font-size: 1em;
     margin-right: 5px;
   }
+  #header-nav{
+    padding-bottom: 0;
+  }
   /* End Header */
 }
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
-
+  .navbar-brand h1 { /* FOOD,LLC */
+    font-size: 7vw; /* 1vw = 1% of viewport width */
+  }
 }

@@ -7,15 +7,17 @@
     <title>Assignment Solution for Module 3</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
   </head>
 <body>
   <header>
     <nav id="header-nav" class="navbar navbar-default">
-      <div class="container">          
+      <div class="container-fluid">      
+        <div class="navbar-header">    
         <div class="navbar-brand">
           <a href="index.html"><h1>Food, LLC</h1></a>
-          </div>
+        </div>
         
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -26,18 +28,15 @@
         </div>
 
         <div id="collapsable-nav" class="collapse navbar-collapse">
-          <ul id="nav-list" class="nav navbar-nav navbar-right">
+          <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs text-center">
             <li>
-              <a href="menu-categories.html">
-                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+              <a href="#Chicken-tile">Chicken</a>
             </li>
             <li>
-              <a href="#">
-                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+              <a href="#Beef-tile">Beef</a>
             </li>
             <li >
-              <a href="#">
-                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+              <a href="#Sushi-tile">Sushi</a>
             </li>
           </ul><!-- #nav-list -->
         </div><!-- .collapse .navbar-collapse -->
@@ -45,10 +44,74 @@
     </nav>
   </header>
 
-  <div id="main-content" class="container">
-    
+  <div id="main-content" class="container-fluid">
+    <h1 id="page-title" class="text-center">Our Menu</h1>
+
+    <div id="home-tiles" class="row">
+      <section class="col-xs-12 col-md-4 col-sm-6">
+        <div class="tile">
+          <h3 id="Chicken-tile" class="tile-title text-center">Chicken</h3>
+          <div class="content-tile">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <a href="#page-title" class="visible-xs back-top"><div class="text-right"> Back to the top</div></a>          
+        </div>         
+      </section>
+      <section class="col-xs-12 col-md-4 col-sm-6">
+        <div class="tile">
+          <h3 id="Beef-tile" class="tile-title text-center">Beef</h3>
+          <div class="content-tile">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>   
+          <a href="#page-title" class="visible-xs back-top"><div class="text-right"> Back to the top</div></a>        
+        </div>         
+      </section>
+      <section class="col-xs-12 col-md-4 col-sm-12">
+        <div class="tile">
+          <h3 id="Sushi-tile" class="tile-title text-center">Sushi</h3>
+          <div class="content-tile">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div> 
+          <a href="#page-title" class="visible-xs back-top"><div class="text-right"> Back to the top</div></a>          
+        </div>         
+      </section>
+
+    </div>
+
+
+
+
   </div><!-- End of #main-content-->
 
+  <footer class="panel-footer">
+    <hr>
+    <a href="#header-nav" class="back-top"><div class="text-center">BACK.<br> You are filled with DETERMINATION.</div></a>
+    <hr>
+  </footer>
   
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
